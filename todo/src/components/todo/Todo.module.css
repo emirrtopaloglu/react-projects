@@ -1,0 +1,107 @@
+.todo {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.todo:last-child {
+    border-bottom: none;
+}
+
+.todoLeft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.todoRight {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox+span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.checkbox:checked+span {
+    background: #007bff;
+}
+
+.checkbox:checked+span:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    left: 25%;
+    top: 27.5%;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.titleDisable {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete {
+    background-color: #e74c3c;
+    border: none;
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.category {
+    background-color: #eee;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #666;
+}
+
+.priority {
+    background-color: #D6EAF8;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #2874A6;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.priorityMedium {
+    background-color: #FDEBD0;
+    color: #AF601A;
+}
+
+.priorityHigh {
+    background-color: #FADBD8;
+    color: #B03A2E;
+}
